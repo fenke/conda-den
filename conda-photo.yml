@@ -1,0 +1,22 @@
+name: cuda
+channels:
+    - default
+    - conda-forge
+dependencies:
+    - python=3.10
+    - cudatoolkit
+    - scipy
+    - scikit-learn
+    - scikit-image
+    - numpy
+    - pandas
+    - matplotlib
+    - opencv
+    - pillow
+    - jupyter
+    - ipywidgets
+    - jupyterlab
+    - jupyter_contrib_nbextensions
+    - jupyterlab-git
+
+
