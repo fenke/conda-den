@@ -1,18 +1,19 @@
-name: cuda
+name: photo
 channels:
     - default
     - conda-forge
 dependencies:
     - python=3.10
-    - cudatoolkit
     - scipy
-    - scikit-learn
-    - scikit-image
     - numpy
     - pandas
-    - matplotlib
+    - cudatoolkit
+    - pytorch
+    - scikit-learn
+    - scikit-image
     - opencv
     - pillow
+    - matplotlib
     - jupyter
     - ipywidgets
     - jupyterlab
