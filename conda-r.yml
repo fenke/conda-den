@@ -1,0 +1,15 @@
+name: essential-r
+channels:
+    - default
+    - conda-forge
+    - r
+dependencies:
+    - python=3.8
+    - numpy
+    - jupyter
+    - ipywidgets
+    - jupyterlab
+    - jupyter_contrib_nbextensions
+    - jupyterlab-git
+    - r-essentials
+

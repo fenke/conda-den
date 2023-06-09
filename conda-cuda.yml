@@ -1,0 +1,26 @@
+name: cuda
+channels:
+    - default
+    - conda-forge
+dependencies:
+    - python=3.8
+    - requests
+    - dnspython
+    - asyncpg
+    - aiohttp
+    - cudatoolkit
+    - scipy
+    - scikit-learn
+    - numpy
+    - pandas
+    - matplotlib
+    - seaborn
+    - pytorch
+    - xgboost
+    - tpot
+    - jupyter
+    - ipywidgets
+    - jupyterlab
+    - jupyter_contrib_nbextensions
+    - jupyterlab-git
+
