@@ -1,5 +1,5 @@
 # conda-den
-Need a place for various conda environments
+Need a central place for various conda environments
 
 ## Create Environment
 
@@ -7,10 +7,6 @@ Need a place for various conda environments
     conda activate warp-ide
     pip install -r conda-extra-reqs
 
-## Update the environment
-
-    conda activate warp-ide
-    conda env update -f conda-warp-ide.yml --prune
 
 ## Add the environment to Jupyter:
 
@@ -18,3 +14,13 @@ Need a place for various conda environments
     python -m ipykernel install --user --name=warp-ide
 
 
+## Update the environment
+
+    conda activate warp-ide
+    conda env update -f conda-warp-ide.yml --prune
+
+
+## Combine environments
+
+    conda activate first-env
+    conda env update --name first-env --file second.yml
