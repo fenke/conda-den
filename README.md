@@ -7,24 +7,52 @@ Need a central place for various conda environments
 
 ## Create Environment
 
-    conda env create -f conda-warp-ide.yml
-    conda activate warp-ide
+    conda env create -f conda-jupyter-base.yml
+    conda activate jupyter-base
     pip install -r conda-extra-reqs
 
 
 ## Add the environment to Jupyter:
 
-    conda activate warp-ide
-    python -m ipykernel install --user --name=warp-ide
+    conda activate jupyter-base
+    python -m ipykernel install --user --name=jupyter-base
 
 
 ## Update the environment
 
-    conda activate warp-ide
-    conda env update -f conda-warp-ide.yml --prune
+    conda activate jupyter-base
+    conda env update -f conda-jupyter-base.yml --prune
 
 
 ## Combine environments
 
     conda activate first-env
     conda env update --name first-env --file second.yml
+
+
+## Install python kernel
+
+    python -m ipykernel install --user --name=jupyter-base
+
+
+## Revisions & history
+
+    conda list --revisions
+    grep -B1 "^# cmd" ${CONDA_PREFIX}/conda-mhistory 
+    
+
+## Channels
+
+    conda config --add channels conda-forge
+    conda config --remove channels conda-forge
+
+# Special environments
+
+## Creating an underlying venv for nbdev
+
+    conda activate jupyter-base
+    python -m venv --system-site-packages .nbdev
+    source .nbdev/bin/activate
+    pip install --upgrade pip
+    pip install -r pip-nbdev
+

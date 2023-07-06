@@ -1,0 +1,9 @@
+
+channels:
+    - default
+    - conda-forge
+dependencies:
+    - requests
+    - dnspython
+
+

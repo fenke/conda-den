@@ -1,0 +1,12 @@
+name: jupyter-base
+channels:
+    - default
+    - conda-forge
+dependencies:
+    - requests
+    - dnspython
+    - asyncpg
+    - aiohttp
+    - falcon
+    - uvicorn
+
