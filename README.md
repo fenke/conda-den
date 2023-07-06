@@ -1,6 +1,10 @@
 # conda-den
 Need a central place for various conda environments
 
+[conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)
+
+[conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
+
 ## Create Environment
 
     conda env create -f conda-warp-ide.yml
