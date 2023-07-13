@@ -1,9 +1,12 @@
 # conda-den
 Need a central place for various conda environments
 
-[conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)
+[Conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)
 
-[conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
+[Conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
+
+[Python's venv](https://docs.python.org/3/library/venv.html)
+
 
 ## Create Environment
 
@@ -50,9 +53,46 @@ Need a central place for various conda environments
 
 ## Creating an underlying venv for nbdev
 
-    conda activate jupyter-base
+    conda activate numdev
     python -m venv --system-site-packages .nbdev
     source .nbdev/bin/activate
     pip install --upgrade pip
     pip install -r pip-nbdev
+    python -m ipykernel install --user --name=nbdev
+
+## License infotmation
+
+### Licenses of packages linked in code
+
+[Aiohttp](https://pypi.org/project/aiohttp/) - Apache 2.0
+[Asyncpg](https://github.com/MagicStack/asyncpg/blob/master/LICENSE) - Apache 2.0
+[Dnspython](https://pypi.org/project/dnspython3/) - Freeware
+[Falcon](https://pypi.org/project/falcon/) - Apache 2.0
+[Matplotlib](https://pypi.org/project/matplotlib/) - PSF
+[Numpy](https://pypi.org/project/numpy/) - BSD
+[Pandas](https://pypi.org/project/pandas/) - BSD
+[Pip](https://pypi.org/project/pip/) - MIT
+[Python](https://docs.python.org/3.10/license.html#psf-license-agreement-for-python-release) - PSF / Python Software Foundation
+[Requests](https://pypi.org/project/requests/) Apache 2.0
+[Scikit-Learn](https://pypi.org/project/scikit-learn/) - BSD
+[SciPy](https://github.com/scipy/scipy/blob/main/LICENSE.txt) - BSD
+[Seaborn](https://pypi.org/project/seaborn/) - BSD
+[Statsmodels](https://pypi.org/project/statsmodels/) BSD
+[PyTorch](https://pypi.org/project/torch/) - BSD
+[Uvicorn](https://pypi.org/project/uvicorn/) - BSD
+[Xgboost](https://pypi.org/project/xgboost/) - Apache 2.0
+
+### Licenses of development tools
+
+[Hatch](https://pypi.org/project/hatch/) - MIT
+[Quarto](https://quarto.org/license.html) - GPL v2 see also [Using programs released under the GNU licenses when writing other programs](https://www.gnu.org/licenses/gpl-faq.en.html#using-programs)
+[Jupyter](https://pypi.org/project/jupyter/) - BSD
+[jupyter_contrib_nbextensions](https://pypi.org/project/jupyter-contrib-nbextensions/) - BSD
+[Jupyterlab](https://pypi.org/project/jupyterlab/) - BSD
+[Jupyterlab-git](https://pypi.org/project/jupyterlab-git/) - BSD
+[Ipywidgets](https://pypi.org/project/ipywidgets/) - BSD
+[Nbdev](https://pypi.org/project/nbdev/) - Apache 2.0
+[Spyder](https://pypi.org/project/spyder/) - MIT
+[TPOT](https://pypi.org/project/TPOT/) - GPL v2
+
 

@@ -2,11 +2,20 @@ name: jupyter-base
 channels:
     - default
     - conda-forge
-includes:
-    - conda-numdev.yml
 
 dependencies:
+    - python=3.10
     - pip
+    - asyncpg
+    - aiohttp
+    - numpy
+    - scipy
+    - scikit-learn
+    - statsmodels
+    - matplotlib
+    - pandas
+    - seaborn
+    - quarto
     - jupyter
     - ipywidgets
     - jupyterlab

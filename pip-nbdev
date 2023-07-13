@@ -1,2 +1,8 @@
+jupyter
+ipywidgets
+jupyterlab
+jupyter_contrib_nbextensions
+jupyterlab-git
 jupyterlab-quarto
 nbdev
+twine
