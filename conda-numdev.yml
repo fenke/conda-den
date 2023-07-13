@@ -1,8 +1,7 @@
-name: jupyter-base
+name: numdev
 channels:
     - default
     - conda-forge
-
 dependencies:
     - python=3.10
     - pip
@@ -16,10 +15,4 @@ dependencies:
     - pandas
     - seaborn
     - quarto
-    - jupyter
-    - ipywidgets
-    - jupyterlab
-    - jupyter_contrib_nbextensions
-    - jupyterlab-git
-    - seaborn
-
+    - hatch
