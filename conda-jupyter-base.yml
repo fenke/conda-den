@@ -4,11 +4,12 @@ channels:
     - conda-forge
 dependencies:
     - python=3.8
+    - virtualenv
     - requests
     - dnspython
-    - scikit-learn
     - numpy
     - scipy
+    - scikit-learn
     - matplotlib
     - pandas
     - jupyter
